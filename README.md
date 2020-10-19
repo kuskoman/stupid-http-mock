@@ -15,7 +15,7 @@ You can build this app from source or use prebuilt image from [DockerHub](https:
 1. Clone git repository
 
    ```shell
-   git clone git@github.com:kuskoman/stupid-http-mock.git
+   git clone https://github.com/kuskoman/stupid-http-mock.git
    ```
 
 2. Build repository
