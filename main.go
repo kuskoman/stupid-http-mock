@@ -12,7 +12,7 @@ import (
 func main() {
 	port := getEnvOrDefault("PORT", ":8080")
 	http.HandleFunc("/", handleRequest)
-	log.Printf("Server listening on %s", port)
+	log.Printf("Mock server listening on %s", port)
 	http.ListenAndServe(port, nil)
 }
 
