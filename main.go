@@ -39,9 +39,10 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 		requestProperties = append(requestProperties, fmt.Sprintf("Form data:\n%s", r.Form.Encode()))
 	}
 
-	log.Printf(strings.Join(requestProperties, "\n"))
+	stringifiedRequestProperties := strings.Join(requestProperties, "\n")
+	log.Printf(stringifiedRequestProperties)
 
-	w.WriteHeader(http.StatusNoContent)
+	w.Write([]byte(stringifiedRequestProperties))
 }
 
 func getEnvOrDefault(key, defaultValue string) string {
