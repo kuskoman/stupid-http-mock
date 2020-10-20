@@ -19,7 +19,7 @@ Building from sources requires [Go](https://golang.org/dl/).
    ```shell
    git clone https://github.com/kuskoman/stupid-http-mock.git
    ```
-   
+
 2. Continue to directory
 
    ```shell
@@ -52,8 +52,9 @@ will run app on host port 1234.
 
 ## Usage
 
-The application takes requests, responds with [204 no content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204)
-and simply logs it's properties.
+The application takes requests, responds with informations about request
+with status [200 OK](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+and simply logs its properties.
 
 Example of logs (after entering app url in browser using firefox
 with random user-agent plugin):
