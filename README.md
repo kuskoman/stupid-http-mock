@@ -12,13 +12,21 @@ You can build this app from source or use prebuilt image from [DockerHub](https:
 
 ## Building from source
 
+Building from sources requires [Go](https://golang.org/dl/).
+
 1. Clone git repository
 
    ```shell
    git clone https://github.com/kuskoman/stupid-http-mock.git
    ```
+   
+2. Continue to directory
 
-2. Build repository
+   ```shell
+   cd stupid-http-mock
+   ```
+
+3. Build repository
 
    ```shell
    go build main.go
@@ -31,13 +39,13 @@ This should result with ready-to-use executable.
 Simply use ([Docker](https://docs.docker.com/get-docker/) required)
 
 ```shell
-docker run kuskoman/stupid-http-mock:latest -p <host port>:<container port>
+docker run -p <host port>:<container port> kuskoman/stupid-http-mock:latest
 ```
 
 for example:
 
 ```shell
-docker run kuskoman/stupid-http-mock:latest -p 1234:8080
+docker run -p 1234:8080 kuskoman/stupid-http-mock:latest
 ```
 
 will run app on host port 1234.
