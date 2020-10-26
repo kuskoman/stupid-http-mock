@@ -40,7 +40,7 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 	}
 
 	stringifiedRequestProperties := strings.Join(requestProperties, "\n")
-	log.Printf(stringifiedRequestProperties)
+	log.Println(stringifiedRequestProperties)
 
 	w.Write([]byte(stringifiedRequestProperties))
 }
